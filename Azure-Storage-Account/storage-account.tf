@@ -7,7 +7,7 @@ resource "azurerm_resource_group" "first_resource_group" {
 
 // Segundo - Criar um storage Account
 resource "azurerm_storage_account" "first_storage_account" {
-  name                     = "gabrielastorageaccount"                   // Nome da Storage Account
+  name                     = "gabrielastorageaccount"                         // Nome da Storage Account
   resource_group_name      = azurerm_resource_group.first_resource_group.name // Referência ao Resource Group
   location                 = var.location                                     // Será chamado através de uma variável do arquivo "Variables.tf"
   account_tier             = var.account_tier                                 // Será chamado através de uma variável do arquivo "Variables.tf"
@@ -17,6 +17,6 @@ resource "azurerm_storage_account" "first_storage_account" {
 }
 
 resource "azurerm_storage_container" "first_container" {
-  name                 = "imagens"                                                 //Nome do container                                                 
+  name                 = "imagens"                                          //Nome do container                                                 
   storage_account_name = azurerm_storage_account.first_storage_account.name // Referencia da storage account
 }
