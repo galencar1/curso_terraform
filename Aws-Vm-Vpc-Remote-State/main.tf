@@ -28,7 +28,7 @@ provider "aws" {
 
 //Pega os dados que foram feitos output na VPC. Por isso as informações devem ser iguais
 // as informações adicionadas na backend-vpc no main.tf
-data "terraform-remote-state" "vpc" {
+data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
     bucket = "gabrielfa-remote-state"

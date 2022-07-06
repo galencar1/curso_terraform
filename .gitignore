@@ -6,3 +6,4 @@ plan-remote-state
 plan-network
 aws-key
 aws-key.pub
+plan-VM
