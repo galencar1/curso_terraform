@@ -4,3 +4,5 @@ terraform.tfstate
 .terraform.lock.hcl
 plan-remote-state
 plan-network
+aws-key
+aws-key.pub
