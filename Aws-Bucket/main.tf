@@ -3,8 +3,8 @@ terraform {
 
   required_providers {
     aws = {
-        sousource = "hashicorp/aws"
-        version = "3.73.0"
+      source  = "hashicorp/aws"
+      version = "3.73.0"
     }
   }
 }
@@ -14,8 +14,8 @@ provider "aws" {
 
   default_tags {
     tags = {
-        owner = "gabrielfa"
-        managed-by = "terraform"
+      owner      = "gabrielfa"
+      managed-by = "terraform"
     }
   }
 }
