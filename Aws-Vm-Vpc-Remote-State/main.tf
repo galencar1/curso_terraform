@@ -3,14 +3,14 @@ terraform {
 
   required_providers {
     aws = {
-        source = "hashicorp/aws"
-        version = "3.73.0   "
+      source  = "hashicorp/aws"
+      version = "3.73.0   "
     }
   }
 
   backend "s3" {
     bucket = "gabrielfa-remote-state"
-    key = "aws-vm/terraform.tfstate"
+    key    = "aws-vm/terraform.tfstate"
     region = "us-east-1"
   }
 }
@@ -20,8 +20,8 @@ provider "aws" {
 
   default_tags {
     tags = {
-    owner = "Gabriel Alencar"
-    managed-by = "terraform"
+      owner      = "Gabriel Alencar"
+      managed-by = "terraform"
     }
   }
 }
@@ -32,7 +32,7 @@ data "terraform-remote-state" "vpc" {
   backend = "s3"
   config = {
     bucket = "gabrielfa-remote-state"
-    key = "aws-vpc/terraform.tfstate"
+    key    = "aws-vpc/terraform.tfstate"
     region = "us-east-1"
   }
 }
