@@ -6,6 +6,8 @@ plan-remote-state
 plan-network
 aws-key
 aws-key.pub
+azure-key
+azure-key.pub
 plan-VM
 plan-vm-com-provisioners
 public_ip.txt
