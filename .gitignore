@@ -5,6 +5,7 @@ terraform.tfstate
 plan-remote-state
 plan-network
 plan.out
+plan
 aws-key
 aws-key.pub
 azure-key
